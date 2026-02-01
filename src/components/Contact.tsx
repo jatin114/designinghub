@@ -44,8 +44,14 @@ const Contact = () => {
                     </div>
 
                     <div className="bg-white dark:bg-slate-950 p-8 md:p-10 rounded-[2rem] border border-slate-100 dark:border-slate-800 shadow-2xl shadow-slate-200/40 dark:shadow-none transition-colors">
-                        <form method="POST" data-netlify="true" name="contact" className="space-y-5">
+                        <form
+                            method="POST"
+                            data-netlify="true"
+                            data-netlify-honeypot="bot-field"
+                            name="contact"
+                            className="space-y-5">
                             <input type="hidden" name="form-name" value="contact" />
+                            <input type="hidden" name="bot-field" />
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div className="space-y-1.5">
