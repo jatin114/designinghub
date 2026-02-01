@@ -1,11 +1,10 @@
-import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
 const SEO = () => {
     const { t } = useTranslation();
 
     return (
-        <Helmet>
+        <>
             {/* Standard metadata tags */}
             <title>{t("seo.title")}</title>
             <meta name="description" content={t("seo.description")} />
@@ -30,7 +29,7 @@ const SEO = () => {
 
             {/* Canonical Link */}
             <link rel="canonical" href="https://designinghub.in/" />
-        </Helmet>
+        </>
     );
 };
 

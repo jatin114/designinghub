@@ -14,7 +14,6 @@ import { FloatingActions } from "./components/FloatingActions";
 
 import { ThemeProvider } from "@/components/theme-provider";
 
-import { HelmetProvider } from "react-helmet-async";
 import SEO from "./components/SEO";
 
 function App() {
@@ -28,24 +27,22 @@ function App() {
   }, [i18n.language]);
 
   return (
-    <HelmetProvider>
-      <ThemeProvider defaultTheme="light" storageKey="designing-hub-theme">
-        <div className="min-h-screen">
-          <SEO />
-          <Navbar />
-          <Hero />
-          <Services />
-          <HowItWorks />
-          <WhyDesigningHub />
-          <PricingBanner />
-          <Portfolio />
-          <About />
-          <Contact />
-          <Footer />
-          <FloatingActions />
-        </div>
-      </ThemeProvider>
-    </HelmetProvider>
+    <ThemeProvider defaultTheme="light" storageKey="designing-hub-theme">
+      <div className="min-h-screen">
+        <SEO />
+        <Navbar />
+        <Hero />
+        <Services />
+        <HowItWorks />
+        <WhyDesigningHub />
+        <PricingBanner />
+        <Portfolio />
+        <About />
+        <Contact />
+        <Footer />
+        <FloatingActions />
+      </div>
+    </ThemeProvider>
   );
 }
 
