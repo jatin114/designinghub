@@ -48,7 +48,7 @@ const Contact = () => {
                             name="contact"
                             method="POST"
                             data-netlify="true"
-                            action="/"
+                            action="/thank-you.html"
                             className="space-y-5">
                             <input type="hidden" name="form-name" value="contact" />
                             <input type="hidden" name="bot-field" />
