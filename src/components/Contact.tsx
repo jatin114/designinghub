@@ -4,9 +4,48 @@ import { Textarea } from "@/components/ui/textarea";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Call02Icon, Mail01Icon, SentIcon } from "@hugeicons/core-free-icons";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const Contact = () => {
     const { t } = useTranslation();
+
+    const [submitted, setSubmitted] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        console.log("formData", formData);
+
+        try {
+            await fetch("/", {
+                method: "POST",
+                body: formData,
+            });
+
+            setSubmitted(true);
+        } catch (error) {
+            alert("Something went wrong. Please try again.");
+        }
+    };
+
+    if (submitted) {
+        return (
+            <section className="py-20 text-center">
+                <div className="max-w-xl mx-auto">
+                    <h2 className="text-3xl font-bold mb-4 text-indigo-600">
+                        Thank You!
+                    </h2>
+                    <p className="text-gray-600">
+                        Your message has been sent successfully.
+                        We will contact you within 24 hours.
+                    </p>
+                </div>
+            </section>
+        );
+    }
 
     return (
         <section id="contact" className="relative w-full py-20 md:py-24 bg-slate-50/50 dark:bg-slate-900/30 overflow-hidden transition-colors duration-300">
@@ -48,7 +87,8 @@ const Contact = () => {
                             name="contact"
                             method="POST"
                             data-netlify="true"
-                            action="/thank-you.html"
+                            data-netlify-honeypot="bot-field"
+                            onSubmit={handleSubmit}
                             className="space-y-5">
                             <input type="hidden" name="form-name" value="contact" />
                             <input type="hidden" name="bot-field" />
