@@ -158,7 +158,7 @@ const resources = {
                 "whatsapp_placeholder": "Type your message...",
                 "whatsapp_send": "Send",
                 "call_us": "Call us",
-                "rights": "© 2026 DesigningHub Agency. All rights reserved."
+                "rights": "© 2026 DesigningHub. All rights reserved."
             }
         }
     },
@@ -317,7 +317,7 @@ const resources = {
                 "whatsapp_placeholder": "अपना संदेश लिखें...",
                 "whatsapp_send": "भेजें",
                 "call_us": "हमें कॉल करें",
-                "rights": "© 2026 DesigningHub Agency। सर्वाधिकार सुरक्षित।"
+                "rights": "© 2026 DesigningHub। सर्वाधिकार सुरक्षित।"
             }
         }
     },
@@ -635,7 +635,7 @@ const resources = {
                 "whatsapp_placeholder": "Tapez votre message...",
                 "whatsapp_send": "Envoyer",
                 "call_us": "Appelez-nous",
-                "rights": "© 2026 Agence DesigningHub. Tous droits réservés."
+                "rights": "© 2026 DesigningHub. Tous droits réservés."
             }
         }
     },
@@ -794,7 +794,7 @@ const resources = {
                 "whatsapp_placeholder": "Escribe tu mensaje...",
                 "whatsapp_send": "Enviar",
                 "call_us": "Llámanos",
-                "rights": "© 2026 Agencia DesigningHub. Todos los derechos reservados."
+                "rights": "© 2026 DesigningHub. Todos los derechos reservados."
             }
         }
     }
