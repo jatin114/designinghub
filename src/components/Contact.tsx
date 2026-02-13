@@ -77,7 +77,7 @@ const Contact = () => {
                                 <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 text-indigo-600 dark:text-indigo-400 shadow-sm transition-colors">
                                     <HugeiconsIcon icon={Mail01Icon} size={22} />
                                 </div>
-                                <span className="font-bold text-slate-900 dark:text-white">designinghub0@gmail.com</span>
+                                <span className="font-bold text-slate-900 dark:text-white">contact@designinghub.in</span>
                             </div>
                         </div>
                     </div>

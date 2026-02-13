@@ -92,9 +92,9 @@ const Footer = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:designinghub0@gmail.com" className="flex items-center gap-3 text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                                    <a href="mailto:contact@designinghub.in" className="flex items-center gap-3 text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
                                         <HugeiconsIcon icon={Mail01Icon} size={16} className="text-indigo-600 dark:text-indigo-400" />
-                                        designinghub0@gmail.com
+                                        contact@designinghub.in
                                     </a>
                                 </li>
                             </ul>
